@@ -1,3 +1,9 @@
+fun outer() {
+    var x = 10;
 
-var x = 10;
-print(x);
+    fun inner() {
+        return x;
+    }
+
+    return x;
+}
